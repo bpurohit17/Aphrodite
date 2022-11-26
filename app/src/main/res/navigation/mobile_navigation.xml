@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.bpurohit.aphrodite.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.bpurohit.aphrodite.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.bpurohit.aphrodite.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.bpurohit.aphrodite.ui.my_profile.MyProfileFragment"
+        android:label="@string/menu_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+
+    <fragment
+        android:id="@+id/nav_ShopsNearby"
+        android:name="com.bpurohit.aphrodite.ui.shops_near_by.ShopsNearByFragment"
+        android:label="@string/menu_shops_near_by"
+        tools:layout="@layout/fragment_shops_near_by" />
+
+
+</navigation>

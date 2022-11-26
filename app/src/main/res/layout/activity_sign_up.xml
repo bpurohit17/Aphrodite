@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_aphrodite_with_txt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.85"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Sign up"
+                android:textColor="@color/textColor"
+                android:textSize="21sp" />
+
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/inter"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textColor="@color/secondaryTextColor"
+                android:textColorHint="@color/secondaryTextColor"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/inter"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textColor="@color/secondaryTextColor"
+                android:textColorHint="@color/secondaryTextColor"
+                android:textSize="13sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_style"
+                    android:fontFamily="@font/inter"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textColorHint="@color/secondaryTextColor"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtShowPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Show"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.488" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:elevation="10dp"
+                android:textSize="16sp"
+                android:background="@color/primaryColor"
+                android:fontFamily="@font/inter_extrabold"
+                android:padding="15dp"
+                android:textAllCaps="false"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="@string/login_string"
+                android:textColor="@color/tertiaryTextColor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
