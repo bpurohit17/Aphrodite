@@ -23,6 +23,29 @@
         app:itemTextColor="@color/secondaryTextColor"
         app:itemIconTint="@color/primaryColor"
         app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/activity_main_drawer" />
+        app:menu="@menu/activity_main_drawer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="23dp">
+
+            <TextView
+                android:id="@+id/nav_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_log_out"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/primaryColor"
+                android:text="@string/menu_logout"
+                android:fontFamily="@font/inter_semi_bold"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@+id/nav_home">
 
+    <!-- navigation drawer menu -->
     <fragment
         android:id="@+id/nav_home"
         android:name="com.bpurohit.aphrodite.ui.home.HomeFragment"
@@ -34,5 +35,24 @@
         android:label="@string/menu_shops_near_by"
         tools:layout="@layout/fragment_shops_near_by" />
 
+    <!-- bottom navigation menu -->
+
+    <fragment
+        android:id="@+id/nav_requests"
+        android:name="com.bpurohit.aphrodite.ui.requests.RequestsFragment"
+        android:label="@string/title_requests"
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="com.bpurohit.aphrodite.ui.contacts.ContactsFragment"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/fragment_contacts" />
+
+    <fragment
+        android:id="@+id/nav_chats"
+        android:name="com.bpurohit.aphrodite.ui.chats.ChatsFragment"
+        android:label="@string/title_chats"
+        tools:layout="@layout/fragment_chats" />
 
 </navigation>

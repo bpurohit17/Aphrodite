@@ -15,14 +15,45 @@ public class LoginActivity extends AppCompatActivity {
 
     private ActivityLoginBinding binding;
     private String email, password;
+//    boolean showContent = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+
+        super.onCreate(savedInstanceState);
 
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+/*
+        splashScreen.setKeepOnScreenCondition(() -> true );
+        startSomeNextActivity();
+        finish();
+
+        final View content = findViewById(android.R.id.content);
+        content.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+            @Override
+            public boolean onPreDraw() {
+                if (showContent) {
+                    content.getViewTreeObserver().removeOnDrawListener(this);
+                }
+                showContentAfterSomeTime();
+                return false;
+            }
+
+            private void startSomeNextActivity() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        showContent = true;
+                    }
+                }, 2000);
+            }
+
+        });
+*/
 
         binding.signupRedirectText.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, SignUpActivity.class)));
 

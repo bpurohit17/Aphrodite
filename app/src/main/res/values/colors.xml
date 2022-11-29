@@ -6,8 +6,8 @@
     // colorPrimaryVariant
     // colorPrimary-dark
     <color name="textColor">#3E3E3E</color>       // colorOnSecondary
-    <color name="tertiaryTextColor">#D2D2D2</color>   // colorSecondary
     <color name="secondaryTextColor">#7B7B7B</color>   // colorSecondaryVariant
+    <color name="tertiaryTextColor">#D2D2D2</color>   // colorSecondary
 
     <color name="white">#FFFFFFFF</color>
     <color name="transparentColor">#00FFFFFF</color>

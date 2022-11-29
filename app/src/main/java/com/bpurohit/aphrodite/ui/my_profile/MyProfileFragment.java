@@ -35,6 +35,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
@@ -51,6 +52,7 @@ import java.util.Objects;
 
 public class MyProfileFragment extends Fragment {
 
+
     private FragmentMyProfileBinding fragmentMyProfileBinding;
     private FirebaseAuth firebaseAuth;
     private AppPermissions appPermissions;
@@ -60,6 +62,9 @@ public class MyProfileFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         fragmentMyProfileBinding = FragmentMyProfileBinding.inflate(inflater, container, false);
+
+//        FirebaseApp.initializeApp(this);
+
         firebaseAuth = FirebaseAuth.getInstance();
         appPermissions = new AppPermissions();
 

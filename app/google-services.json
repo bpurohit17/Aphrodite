@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025650577508",
+    "firebase_url": "https://aphrodite-46f7f-default-rtdb.firebaseio.com",
+    "project_id": "aphrodite-46f7f",
+    "storage_bucket": "aphrodite-46f7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025650577508:android:3ee90cd816a325888d8f71",
+        "android_client_info": {
+          "package_name": "com.bpurohit.aphrodite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025650577508-fd3idaov90se0mv3r5l889s2mf7fh9vj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bpurohit.aphrodite",
+            "certificate_hash": "74527de3007d1fb145b9ac7ad96244cfb8b7b27f"
+          }
+        },
+        {
+          "client_id": "1025650577508-7btn89qut1ov2f2ui1ugq01u9ro81gaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZT7Flo_wh7JWoP_QtjatctSW4Wez9Mkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025650577508-7btn89qut1ov2f2ui1ugq01u9ro81gaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

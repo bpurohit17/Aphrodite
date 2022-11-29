@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="3"
+    android:background="@color/white"
     tools:context=".activity.LoginActivity">
 
     <LinearLayout
@@ -128,6 +129,7 @@
                 android:fontFamily="@font/inter_extrabold"
                 android:padding="15dp"
                 android:text="Login"
+                android:background="@color/primaryColor"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 app:cornerRadius="30dp" />
